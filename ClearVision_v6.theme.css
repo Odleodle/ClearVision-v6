@@ -1,15 +1,18 @@
 /**
- * @name m
+ * @name ClearVision
  * @author ClearVision Team
  * @version 6.3.0
- * @description Highly customizable and beautiful theme for BetterDiscord.
+ * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.github.io
- * @invite 7pNUC9C
- * @BDEditor Clear Vision
-*/
+ * @invite dHaSxn3
+ */
 
-@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+
+
+
+@import url(https://clearvision.github.io/ClearVision-v6/m.css);
+
 
 :root {
   --main-color: #085B53;
@@ -17,7 +20,23 @@
   --success-color: #537230;
   --danger-color: #85C153;
   --url-color: #619869;
-  --background-image: url('https://i.imgur.com/L6uIyGE.jpg');
+
+  
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+  
+  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  --text-normal: rgb(220, 221, 222); /* color of default discord text */
+  --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+  --channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+  --members-width: 240px; /* member list width [default: 240px] */
+
+--background-image: url('https://i.imgur.com/L6uIyGE.jpg');
   --background-shading: 30%;
   --background-position: center;
   --background-size: cover;
@@ -30,43 +49,16 @@
   --background-invert: 0%;
   --background-blur: 0px;
   --background-overlay: rgb(0,0,0,0.19);
-  --user-popout-image: url('https://i.imgur.com/jBenj6n.jpg');
-  --user-popout-position: center;
-  --user-popout-size: cover;
-  --user-popout-repeat: no-repeat;
-  --user-popout-attachment: fixed;
-  --user-popout-brightness: 114%;
-  --user-popout-contrast: 147%;
-  --user-popout-saturation: 100%;
-  --user-popout-grayscale: 0%;
-  --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
-  --user-modal-image: url('https://i.imgur.com/zKz50hk.jpg');
-  --user-modal-position: center right;
-  --user-modal-size: cover;
-  --user-modal-repeat: no-repeat;
-  --user-modal-attachment: fixed;
-  --user-modal-brightness: 114%;
-  --user-modal-contrast: 138%;
-  --user-modal-saturation: 300%;
-  --user-modal-grayscale: 0%;
-  --user-modal-invert: 0%;
-  --user-modal-blur: 0px;
-  --home-icon: url('https://i.imgur.com/2M0Nsgv.png');
+
+ --home-icon: url('https://i.imgur.com/2M0Nsgv.png');
   --home-position: center;
   --home-size: 52px;
-  --channel-unread: #9AF59D;
+
+   --channel-unread: #9AF59D;
   --channel-color: rgb(76,175,80,1);
   --muted-color: rgb(76,175,80,0.33);
-  --online-color: #43b581;
-  --idle-color: #faa61a;
-  --dnd-color: #982929;
-  --streaming-color: #593695;
-  --offline-color: #808080;
-  --main-font: gg sans;
-  --code-font: Consolas;
-  --channels-width: 220px;
-  --members-width: 240px;
+  --channel-text-selected: #fff;
+
   --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
@@ -80,9 +72,32 @@
   --backdrop-grayscale: var(--background-grayscale);
   --backdrop-sepia: var(--background-sepia);
   --backdrop-blur: var(--background-blur);
+
+ --user-popout-image: url('https://i.imgur.com/jBenj6n.jpg');
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 114%;
+  --user-popout-contrast: 147%;
+  --user-popout-saturation: 100%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 3px;
+
+  --user-modal-image: url('https://i.imgur.com/zKz50hk.jpg');
+  --user-modal-position: center right;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 114%;
+  --user-modal-contrast: 138%;
+  --user-modal-saturation: 300%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
 }
-
-/* Any custom CSS below here */
